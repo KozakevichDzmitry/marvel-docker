@@ -28,7 +28,7 @@ function render_header_menu()
             );
             ?>
             <div class="nav__btn">
-                <a class="btn btn--mobile" href="#contact">CONTACT US <?php render_btn_icon(); ?></a>
+                <a class="btn btn--mobile" id="btnContactMobile" href="#contact">CONTACT US <?php render_btn_icon(); ?></a>
             </div>
         </nav>
     </header>
