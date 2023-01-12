@@ -1,0 +1,22 @@
+.btn,
+input[type="submit"].btn{
+  padding: 19px 40px 15px ;
+  background-color: $color-yellow;
+  font-family:$font-Sofia-Pro;
+  font-size: $font-size-btn;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .04em;
+  text-decoration: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: $font-color-btn;
+  border: none;
+  border-radius: 0;
+  transition: all .3s linear;
+
+  &:hover{
+    opacity: .8;
+    color: $font-color-btn;
+  }
+}

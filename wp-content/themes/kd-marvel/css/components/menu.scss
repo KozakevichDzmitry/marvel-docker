@@ -1,0 +1,51 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin-left: .75em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      padding: .25em;
+      text-decoration: none;
+      color: $font-color-link;
+      font-weight: 400;
+      font-size: $font-size-link;
+      line-height: 1.1;
+      border-bottom: 1px solid transparent;
+      transition: all .3s linear;
+
+      &:hover {
+        border-bottom: 1px solid $color-yellow;
+      }
+    }
+
+  }
+}
+
+.menu-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: auto;
+
+  .icon-close{
+    display: none;
+  }
+  &.active{
+    .icon-open{
+      display: none;
+    }
+    .icon-close{
+      display: inline-block;
+    }
+  }
+}

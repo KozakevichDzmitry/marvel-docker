@@ -1,0 +1,83 @@
+$font-size-basic: 1.125rem;
+$font-size-text-big: 1.56rem;
+$font-size-text-little: .875rem;
+$font-size-link: 1.125rem;
+$font-size-title: 5.525rem;
+$font-size-title-little: 2.5rem;
+$font-size-title-big: 7.187rem;
+$font-size-btn: .875rem;
+$font-color-text: #0B0D21;
+$font-color-light: #FFFFFF;
+$font-color-link: #000000;
+$font-color-title: #000000;
+$font-color-input: #000000;
+$font-color-btn: #000000;
+$font-color-subtitle: #000000;
+$font-Sofia-Pro: 'Sofia Pro', sans-serif;
+$font-Alata: 'Alata', sans-serif;
+$color-yellow: #F9D023;
+$color-error: #dc3232;
+
+html {
+  font-size: 16px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family:$font-Sofia-Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $font-size-basic;
+  line-height: 1.39em;
+  color: $font-color-text;
+}
+.container{
+  max-width: 1140px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.header-title{
+  position: relative;
+  font-family: $font-Alata;
+  font-weight: 400;
+  font-size: $font-size-title;
+  line-height: .9;
+  color: $font-color-title;
+  padding: 0 0 .55em 0;
+}
+.bottom-line{
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1.1em;
+    height: 6px;
+    background-color: $color-yellow;
+  }
+  &-white:after{
+    background-color: #FFFFFF;
+  }
+}
+a:active,
+a:visited,
+a:focus{
+  color: inherit;
+  border: none;
+  outline: none;
+}
+@media (max-width: 1100px) {
+  .header-title{
+    font-size: $font-size-title * .8;
+  }
+}
+@media (max-width: 870px) {
+  .header-title{
+    font-size: $font-size-title * .6;
+  }
+}
+@media (max-width: 740px) {
+  .header-title{
+    font-size: $font-size-title * .45;
+  }
+}

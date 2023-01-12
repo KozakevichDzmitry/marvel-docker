@@ -1,0 +1,75 @@
+.site-footer{
+  background: #000000;;
+}
+.footer__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5.6em 0 16em 0;
+  gap: 1em;
+  justify-content: space-between;
+}
+.footer__contacts{
+  flex: 1 1 55%;
+}
+.footer__title{
+  color: #ffffff;
+  margin: 0 0 0.7em 0;
+}
+.footer__contacts-content{
+  font-family: $font-Sofia-Pro;
+  font-weight: 700;
+  font-size: $font-size-title-little;
+  line-height: 1.05;
+  color: $color-yellow;
+  & span{
+    color: $font-color-light;
+  }
+  .contact{
+    color: $color-yellow;
+  }
+  a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+}
+.footer__form{
+  width: 445px;
+}
+.footer__form-title{
+  font-family: $font-Sofia-Pro;
+  font-size: $font-size-title-little;
+  line-height: 1.05;
+  color: $font-color-light;
+}
+@media (max-width: 1400px) {
+  .footer__wrapper {
+    padding-right: 4em;
+  }
+}
+@media (max-width: 1100px) {
+  .footer__wrapper {
+    padding: 4em 6em 4em 0 ;
+  }
+}
+@media (max-width: 870px) {
+  .footer__wrapper {
+    padding: 4em 0;
+  }
+  .footer__contacts-content{
+    font-size: $font-size-title-little * .8;
+  }
+  .footer__form-title{
+    font-size: $font-size-title-little * .8;
+  }
+}
+@media (max-width: 740px) {
+  .footer__contacts-content{
+    font-size: $font-size-title-little * .63;
+  }
+  .footer__form-title{
+    font-size: $font-size-title-little * .63;
+  }
+}
